@@ -3,10 +3,10 @@ import {MdEdit,MdDelete} from 'react-icons/md';
 const ExpenseItem = ({expense}) => {
    const {id,charge,amount}=expense;
     return ( 
-        <li className='item'>
+        <li  key ={id} className='item'>
             <div className="info">
-              <spna className="expense"> {charge}</spna>
-              <spna className="amount"> ${amount}</spna>
+              <span className="expense"> {charge}</span>
+              <span className="amount"> ${amount}</span>
             </div>
             <div>
                 <button className="edit-btn" aria-label='edit-btn'>
